@@ -1,0 +1,261 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    background-color: #FFE3B3;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85, 85, 85);
+}
+
+a, .btn{
+    transition: all 300ms ease;
+}
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color:#752092;
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+ 
+a:hover{
+    color: #C957BC;
+    text-decoration: none;
+}
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display:flex;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+ .pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    clip-path: circle();
+}
+
+.section-text {
+    align-self: center;
+    text-align: center;
+    color: #752092;
+}
+
+ .p{
+     font-weight: 600;
+     margin-bottom: 1em;
+ }
+
+ .h1{
+     font-size: 3rem;
+     text-align: center;
+     margin-bottom: 1.5em;
+ }
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap:1rem;
+}
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/*for the contact button*/
+.btn-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn{
+    font-weight: 500;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 7.5rem;
+    border-radius: 2rem;
+    margin-top: 1em;
+}
+
+.btn-1{
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+    .btn-1:hover {
+        cursor: pointer;
+        background: #C957BC;
+        color: #752092;
+    }
+
+    .btn-container{
+        gap: 1rem;
+    }
+
+/*about*/
+#about {
+    text-align: center;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+#about .section-text h1 {
+    margin: 20px ;
+}
+
+
+.details-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px; 
+}
+
+.details-container p {
+    margin-bottom: 20px;
+}
+
+/*skills*/
+#skills {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills h1 {
+    color: #752092;
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+.skill-container {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid black; 
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-bar {
+    position: relative;
+    height: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #C957BC;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #752092;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skill-container:hover .percentage-text {
+    opacity: 1;
+}
+
+.skill-container:hover .skill-progress {
+    width: 100%;
+    background-color: #C957BC;
+}
+
+/*contacts*/
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    height: 70vh;
+}
+
+.contact-info-1{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color:rgb(0,0,0);
+    background:(250, 250, 250);
+    margin:2rem auto;
+    padding:0.5rem;
+}
+
+.contact-info-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+/*footer*/
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}
+
