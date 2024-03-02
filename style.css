@@ -250,12 +250,12 @@ section{
 }
 
 /*footer*/
-footer{
+.footer{
     height: 26vh;
     margin: 0 1rem;
 }
 
-footer p{
+.footer p{
     text-align: center;
 }
 
